@@ -1,0 +1,29 @@
+import java.util.Arrays;
+class Question2 {
+ 
+	public static void main(String[] args) {
+		//This Part u don't have to touch
+		int A[] = { 0, 3, 3, 7, 5, 3, 11, 1 };
+		int N = A.length;
+		
+    solution(A,N);
+	}
+ 
+ 
+//only this part u will have to do
+	public static int solution(int[] A,int N) {
+        if (N==1)
+            return -2;
+        Arrays.sort(A);
+        long minDistance=Long.MAX_VALUE;
+        for (int i = 1; i < A.length; i++) {
+			long distance=(long)A[i]-A[i-1];
+			if (distance<minDistance) {
+				minDistance=distance;
+			}
+		}
+        return minDistance>100000000 ? -1 : (int)minDistance;
+ 
+    }
+ 
+}
