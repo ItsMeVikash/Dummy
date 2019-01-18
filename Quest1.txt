@@ -1,0 +1,17 @@
+import java.util.Arrays;
+	class Solution{
+		public int solution(int[] A) {
+	        if (A.length==1)
+	            return -2;
+	        Arrays.sort(A);
+	        long minDistance=Long.MAX_VALUE;
+	        for (int i = 1; i < A.length; i++) {
+				long distance=(long)A[i]-A[i-1];
+				if (distance<minDistance) {
+					minDistance=distance;
+				}
+			}
+	        return minDistance>100000000 ? -1 : (int)minDistance;
+ 
+	    }
+	}
