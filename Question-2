@@ -6,7 +6,7 @@ class Question2 {
 		int A[] = { 0, 3, 3, 7, 5, 3, 11, 1 };
 		int N = A.length;
 		
-    solution(A,N);
+                system.out.println(solution(A,N));
 	}
  
  
