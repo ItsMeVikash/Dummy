@@ -1,27 +1,119 @@
-Android Development – Get a chance to design you most beloved thing - Mobile
-Angular JS - What HTML would have been, had it been designed for building web-apps
-C – Let’s Learn how to C
-C++ - Advance your C abilities 
-Current Affairs – Know what’s going around you
-Entrance Exam – Entry to your dream course
-Gate – Become a Master!!
-GK – Become a human google
-Html/CSS – Don’t like some websites UI, learn how to create your own
-Interview – you guide before the Fight.
-IOS Development – Because using iPhone is too mainstream, let’s develop one
-JEE -  
-Java – Best coffee, Best Language 
-Javascript – Curious how the backend of your webpage looks – Here is the answer 
-Job Search – Get paid for your passion 
-Junit –Test your Java code here
-MySql - 
-Online Compiler – Test your brain child in any language 
-Photography – Up your Selfie game
-PHP - 
-Python – Don’t be afraid Its just a Language 
-Quiz – Exercise your Brain
-Selenium – Testing Automation Tool
-Servlet – Advance Java at your SERvice 
-Spring – Not a season but a Framework  
-Testing – If you like finding faults, make it your career
-UPSC – A tough nut to crack, become an example for others 
+﻿About Us:-
+
+	We are at introductory stage alluded as 'Tech Eternity Hub' as of now creating Android Application which can be utilized in our everyday life. The teccnology you need and the consideration you 		deserve.We are endeavoring to changing the world with changing the Technology by Upgrading the product for transforming us.
+
+Share:-	
+	Learning is endless process.It would be ideal if you pause for a minute to share to others since sharing is Caring. 
+	Our Motive is, “If you are not moving you are dead.” If you are not learning you are not moving. 
+	If you are not making an effort to be a better human being or be better in skills of handling your life 
+	you are actually not learning or else not applying your learning. 
+
+	A debt of gratitude is in order for your Cooperation.Keep Learning.
+	
+	/******************CODE***********************/
+
+	try { 
+    		Intent shareIntent = new Intent(Intent.ACTION_SEND);  
+    		shareIntent.setType("text/plain");
+    		shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Eternity Learning");
+   		String shareMessage= "\nGive us a chance to begin gaining from each asset and sites in an increasingly powerful manner.It is an unquestionable requirement to continue learning in life to 				continue upgrading your living background each minute. It would be ideal if you pause for a minute to Download,Rate and Share \n\n";
+    		shareMessage = shareMessage + "https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID +"\n\n";
+    		shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage);  
+    		startActivity(Intent.createChooser(shareIntent, "Offer To Your Friends by means of choosing one beneath given application"));
+	   } catch(Exception e) { 
+  		  //e.toString();
+		}
+
+
+Rate:-
+	Aren't You enjoying ?. On the off chance that Yes, demonstrate your adoration by sharing and rating our application.Keep Learning.
+
+	/*****************************CODE***********************/
+
+	 Uri uri = Uri.parse("market://details?id=" + context.getPackageName());
+    	 Intent goToMarket = new Intent(Intent.ACTION_VIEW, uri);
+    	 goToMarket.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY |Intent.FLAG_ACTIVITY_NEW_DOCUMENT |Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
+    	 try {
+        	startActivity(goToMarket);
+   	     } catch (ActivityNotFoundException e) {
+        		startActivity(new Intent(Intent.ACTION_VIEW,
+                	Uri.parse("http://play.google.com/store/apps/details?id=" + context.getPackageName())));
+    		}
+
+Policy:-
+	We are utilizing contents from different sites, for example, tutorialspoint, javatpoint, w3scholls and so forth for training reason as it were. We regard every law and We dont need to hurt anybody's 		assessments or voilates any site strategy yet on the off chance that you discovered a portion of our contents which is unseemly, reach to us through our Contact Us segment.
+
+Contact Us:-
+	Something's Up ? Reach to us by underneath methods.
+	1. Check out on Website
+	2. Facebook
+	3. Instagram
+	4. Email
+
+	/**********************CODE************************************/
+
+ 	public static AlertDialog create(Context context) {
+ 		 final TextView message = new TextView(context);
+  		// i.e.: R.string.dialog_message => // "Test this dialog following the link to dtmilano.blogspot.com"
+ 		 final SpannableString s = new SpannableString(context.getText(R.string.dialog_message));
+  		Linkify.addLinks(s, Linkify.WEB_URLS);
+  		message.setText(s);
+  		message.setMovementMethod(LinkMovementMethod.getInstance());
+		  return new AlertDialog.Builder(context)
+  		 .setTitle(R.string.dialog_title)
+   		.setCancelable(true)
+   		.setIcon(android.R.drawable.ic_dialog_info)
+   		.setPositiveButton(R.string.dialog_action_dismiss, null)
+   		.setView(message)
+   		.create();
+		 }
+	}
+	
+	
+Other Apps:-
+	Check out our other apps on Google Play which might be useful for you.
+	1. Insta Share & Print.
+	2. Smiling Singing Success.
+
+	/********************************CODE*************************/
+
+	// MainActivity.java onCreate
+       	 TextView t3 = (TextView) findViewById(R.id.text3);
+       	 t3.setText(
+          	  Html.fromHtml(
+               		 "<b>text3:</b>  Text with a " +
+                		"<a href=\"http://www.google.com\">link</a> " +
+               		 "created in the Java source code using HTML."));
+       	 t3.setMovementMethod(LinkMovementMethod.getInstance());
+
+Exit:-
+	
+	/**************************CODE*************************/
+
+	@Override
+    	public void onBackPressed() {
+        		AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+       	 	alertDialogBuilder.setTitle("Exit Application?");
+        		alertDialogBuilder
+                		.setMessage("Are you Sure to Exit the App ?.Click yes to exit!")
+                		.setCancelable(false)
+                		.setPositiveButton("Yes",
+                        		new DialogInterface.OnClickListener() {
+                           			public void onClick(DialogInterface dialog, int id) {
+                              				 this.finish();
+    					Intent intent = new Intent(Intent.ACTION_MAIN);
+    					intent.addCategory(Intent.CATEGORY_HOME);
+    					intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+    					startActivity(intent);
+                           		 }
+                      	  })
+
+                		.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    		public void onClick(DialogInterface dialog, int id) {
+		                        dialog.cancel();
+                   	 }
+                	});
+       	 AlertDialog alertDialog = alertDialogBuilder.create();
+        	alertDialog.show();
+        }
+	
