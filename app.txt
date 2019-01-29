@@ -1,119 +1,198 @@
-﻿About Us:-
+﻿Android Development -
 
-	We are at introductory stage alluded as 'Tech Eternity Hub' as of now creating Android Application which can be utilized in our everyday life. The teccnology you need and the consideration you 		deserve.We are endeavoring to changing the world with changing the Technology by Upgrading the product for transforming us.
+	Google Developers -  	https://developer.android.com/guide/
+	JavaTPoint - 	https://www.javatpoint.com/android-tutorial
+	Totorials Point - 	https://www.tutorialspoint.com/android/
+	Google Training- 	https://developers.google.com/training/android/
+	O7Planning - 	https://o7planning.org/en/11007/android
+	W3 Adda - 	https://www.w3adda.com/android-tutorial
 
-Share:-	
-	Learning is endless process.It would be ideal if you pause for a minute to share to others since sharing is Caring. 
-	Our Motive is, “If you are not moving you are dead.” If you are not learning you are not moving. 
-	If you are not making an effort to be a better human being or be better in skills of handling your life 
-	you are actually not learning or else not applying your learning. 
+Angular JS - 
 
-	A debt of gratitude is in order for your Cooperation.Keep Learning.
+	Official Documentation-    https://docs.angularjs.org/tutorial
+	W3Schools- 	    https://www.w3schools.com/angular/
+	Tutorials Point - 	   https://www.tutorialspoint.com/angularjs/
+	Guru99 - 		   https://www.guru99.com/angularjs-tutorial.html
+	Codecademy - 	   https://www.codecademy.com/learn/learn-angularjs
+	Totorials Teachers	   https://www.tutorialsteacher.com/angularjs/angularjs-tutorials
+	Thinkster 		   https://thinkster.io/topics/angular
+
+C - 
 	
-	/******************CODE***********************/
-
-	try { 
-    		Intent shareIntent = new Intent(Intent.ACTION_SEND);  
-    		shareIntent.setType("text/plain");
-    		shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Eternity Learning");
-   		String shareMessage= "\nGive us a chance to begin gaining from each asset and sites in an increasingly powerful manner.It is an unquestionable requirement to continue learning in life to 				continue upgrading your living background each minute. It would be ideal if you pause for a minute to Download,Rate and Share \n\n";
-    		shareMessage = shareMessage + "https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID +"\n\n";
-    		shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage);  
-    		startActivity(Intent.createChooser(shareIntent, "Offer To Your Friends by means of choosing one beneath given application"));
-	   } catch(Exception e) { 
-  		  //e.toString();
-		}
-
-
-Rate:-
-	Aren't You enjoying ?. On the off chance that Yes, demonstrate your adoration by sharing and rating our application.Keep Learning.
-
-	/*****************************CODE***********************/
-
-	 Uri uri = Uri.parse("market://details?id=" + context.getPackageName());
-    	 Intent goToMarket = new Intent(Intent.ACTION_VIEW, uri);
-    	 goToMarket.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY |Intent.FLAG_ACTIVITY_NEW_DOCUMENT |Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
-    	 try {
-        	startActivity(goToMarket);
-   	     } catch (ActivityNotFoundException e) {
-        		startActivity(new Intent(Intent.ACTION_VIEW,
-                	Uri.parse("http://play.google.com/store/apps/details?id=" + context.getPackageName())));
-    		}
-
-Policy:-
-	We are utilizing contents from different sites, for example, tutorialspoint, javatpoint, w3scholls and so forth for training reason as it were. We regard every law and We dont need to hurt anybody's 		assessments or voilates any site strategy yet on the off chance that you discovered a portion of our contents which is unseemly, reach to us through our Contact Us segment.
-
-Contact Us:-
-	Something's Up ? Reach to us by underneath methods.
-	1. Check out on Website
-	2. Facebook
-	3. Instagram
-	4. Email
-
-	/**********************CODE************************************/
-
- 	public static AlertDialog create(Context context) {
- 		 final TextView message = new TextView(context);
-  		// i.e.: R.string.dialog_message => // "Test this dialog following the link to dtmilano.blogspot.com"
- 		 final SpannableString s = new SpannableString(context.getText(R.string.dialog_message));
-  		Linkify.addLinks(s, Linkify.WEB_URLS);
-  		message.setText(s);
-  		message.setMovementMethod(LinkMovementMethod.getInstance());
-		  return new AlertDialog.Builder(context)
-  		 .setTitle(R.string.dialog_title)
-   		.setCancelable(true)
-   		.setIcon(android.R.drawable.ic_dialog_info)
-   		.setPositiveButton(R.string.dialog_action_dismiss, null)
-   		.setView(message)
-   		.create();
-		 }
-	}
+	Tutorials Point - 	https://www.tutorialspoint.com/cprogramming/
+	CProgramming - 	https://www.cprogramming.com/tutorial/c-tutorial.html
+	Programiz- 		https://www.programiz.com/c-programming
+	W3schools		https://www.w3schools.in/c-tutorial/
+	StudyTonight	https://www.studytonight.com/c/
+	JavaTPoint		https://www.javatpoint.com/c-programming-language-tutorial
+	Fresh 2 Refresh 	https://fresh2refresh.com/c-programming/
+	GeeksforGeeks	https://www.geeksforgeeks.org/c-programming-language/
 	
+C++ -
 	
-Other Apps:-
-	Check out our other apps on Google Play which might be useful for you.
-	1. Insta Share & Print.
-	2. Smiling Singing Success.
+	LearnCPP		https://www.learncpp.com/
+	CplusPlus		http://www.cplusplus.com/doc/tutorial/
+	TutorialsPoint 	https://www.tutorialspoint.com/cplusplus/
+	Programiz		https://www.programiz.com/cpp-programming
+	SoloLearn		https://www.sololearn.com/Course/CPlusPlus/
+	CPP for School	http://www.cppforschool.com/tutorials.html
+	JavaTPoint		https://www.javatpoint.com/cpp-tutorial
+	W3schools		https://www.w3schools.in/cplusplus-tutorial/
+	GeeksforGeeks	https://www.geeksforgeeks.org/c-plus-plus/
 
-	/********************************CODE*************************/
 
-	// MainActivity.java onCreate
-       	 TextView t3 = (TextView) findViewById(R.id.text3);
-       	 t3.setText(
-          	  Html.fromHtml(
-               		 "<b>text3:</b>  Text with a " +
-                		"<a href=\"http://www.google.com\">link</a> " +
-               		 "created in the Java source code using HTML."));
-       	 t3.setMovementMethod(LinkMovementMethod.getInstance());
+Current Affairs – 
 
-Exit:-
+Entrance Exam – 
+
+Gate – 
+
+GK – 
+
+Html/CSS – 
+
+	W3schools HTML	https://www.w3schools.com/html/default.asp
+	W3schools CSS	https://www.w3schools.com/css/default.asp
+	Learn Shayhowe	https://learn.shayhowe.com/html-css/
+	Codecademy	https://www.codecademy.com/learn/learn-html
+	Tutorialspoint CSS	https://www.tutorialspoint.com/css/
+	Tutorialspoint HTML	https://www.tutorialspoint.com/html/
+	JavaTPoint HTML	https://www.javatpoint.com/html-tutorial
+	JavaTPoint CSS	https://www.javatpoint.com/css-tutorial
+	GeeksforGeeks Html	https://www.geeksforgeeks.org/html-tutorials/
+	GeeksforGeeks CSS	https://www.geeksforgeeks.org/css-tutorials/
 	
-	/**************************CODE*************************/
+Interview – 
+	
+	How to crack ? 			https://www.tutorialspoint.com/cracking_interviews/index.htm
+	All Programming Interview Questions	https://www.javatpoint.com/interview-questions-and-answers
+	Common Questions			https://fairygodboss.com/career-topics/interviewing-questions-and-answers
+	Top 14 Questions			https://careersidekick.com/what-to-say-in-a-job-interview-questions-and-answers/		
 
-	@Override
-    	public void onBackPressed() {
-        		AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-       	 	alertDialogBuilder.setTitle("Exit Application?");
-        		alertDialogBuilder
-                		.setMessage("Are you Sure to Exit the App ?.Click yes to exit!")
-                		.setCancelable(false)
-                		.setPositiveButton("Yes",
-                        		new DialogInterface.OnClickListener() {
-                           			public void onClick(DialogInterface dialog, int id) {
-                              				 this.finish();
-    					Intent intent = new Intent(Intent.ACTION_MAIN);
-    					intent.addCategory(Intent.CATEGORY_HOME);
-    					intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-    					startActivity(intent);
-                           		 }
-                      	  })
 
-                		.setNegativeButton("No", new DialogInterface.OnClickListener() {
-                    		public void onClick(DialogInterface dialog, int id) {
-		                        dialog.cancel();
-                   	 }
-                	});
-       	 AlertDialog alertDialog = alertDialogBuilder.create();
-        	alertDialog.show();
-        }
+IOS Development – 
+
+	Apple Developer	https://developer.apple.com/library/archive/referencelibrary/GettingStarted/DevelopiOSAppsSwift/
+	TutorialsPoint 	https://www.tutorialspoint.com/ios/
+	AppCoda		https://www.appcoda.com/tutorials/ios/
+	
+JEE -  
+
+	Physics Formulae List 		http://www.concepts-of-physics.com/resources/general/image/formulae-sheets-for-physics-2017-1.pdf
+	Handbook downloads Link-====to write here
+	
+Java –  
+
+	TutorialsPoint	https://www.tutorialspoint.com/java/
+	W3schools		https://www.w3schools.com/java/
+	Oracle Documentation	https://docs.oracle.com/javase/tutorial/
+	Guru99		https://docs.oracle.com/javase/tutorial/
+	JavaTPoint		https://www.javatpoint.com/java-tutorial
+	GeeksforGeeks	https://www.geeksforgeeks.org/java/
+
+	
+Javascript – 
+
+	W3schools 	https://www.w3schools.com/js/
+	JavaScript Info	https://javascript.info/
+	TutorialsPoint	https://www.tutorialspoint.com/javascript/
+	GeeksforGeeks	https://www.geeksforgeeks.org/javascript-tutorial/
+	Guru99		https://www.guru99.com/interactive-javascript-tutorials.html
+	JavaTPoint		https://www.javatpoint.com/javascript-tutorial
+
+Job Search – 
+
+	LinkedIn		https://in.linkedin.com/jobs/
+	69Jobs		http://www.69jobs.com/
+	Naukri		https://www.naukri.com/
+	Glassdoor		https://www.glassdoor.co.in
+	AngelList		https://angel.co/
+	Monster		https://www.monsterindia.com/
+	TimesJob		https://www.timesjobs.com/
+	Shine		https://www.shine.com/
+	CutShort		https://cutshort.io/
+	FresherWorld	https://www.freshersworld.com/	
+Junit –
+
+	Guru99		https://www.guru99.com/junit-tutorial.html
+	Vogella		http://www.vogella.com/tutorials/JUnit/article.html
+	TutorialsPoint	https://www.tutorialspoint.com/junit/
+	JavaTPoint		https://www.javatpoint.com/junit-tutorial
+	Baeldung		https://www.baeldung.com/junit
+	Junit Official	https://junit.org/
+	
+MySql - 
+
+	TutorialsPoint	https://www.tutorialspoint.com/mysql/
+	MySql Official	http://www.mysqltutorial.org/
+	JavaTPoint		https://www.javatpoint.com/mysql-tutorial
+	Quackit		https://www.quackit.com/mysql/tutorial/
+
+Online Compiler – 
+
+	CodeChef		https://www.codechef.com/ide
+	IdeOne		https://ideone.com/
+	CompileOnline	http://www.compileonline.com/
+	OnlineGDB		https://www.onlinegdb.com/
+	CodePad		http://codepad.org/
+	JsFiddle		https://jsfiddle.net/
+	JDoodle		https://www.jdoodle.com/
+	HackerEarth	https://code.hackerearth.com/
+
+Photography – 
+
+PHP - 
+
+	W3schools		https://www.w3schools.com/php/
+	TutorialsPoint	https://www.tutorialspoint.com/php/
+	PhpTpoint		https://www.phptpoint.com/php-tutorial/
+	GeeksforGeeks	https://www.geeksforgeeks.org/php/
+	JavaTPoint		https://www.javatpoint.com/php-tutorial
+	
+Python –  
+
+	W3schools		https://www.w3schools.com/python/
+	TutorialsPoint	https://www.tutorialspoint.com/python/
+	Programiz		https://www.programiz.com/python-programming/tutorial
+	Guru99		https://www.guru99.com/python-tutorials.html
+	GeeksforGeeks	https://www.geeksforgeeks.org/python-programming-language/
+	
+Quiz – 
+
+	Computer Science topic Wise		https://www.geeksforgeeks.org/quiz-corner-gq/
+	Scripting Language Quizes		https://www.w3schools.com/quiztest/
+	Java topic wise 			https://www.javatpoint.com/examaccess
+	Quantitative Aptitude Quiz		https://quiz.jagranjosh.com/quantitative-aptitude/	
+	
+Selenium – 
+
+	Guru99		https://www.guru99.com/selenium-tutorial.html
+	Toosqa		https://www.toolsqa.com/selenium-tutorial/
+	JavaTpoint		https://www.javatpoint.com/selenium-tutorial
+	TutorialsPoint	https://www.tutorialspoint.com/selenium/
+	
+Servlet –  
+
+	JavaTPoint		https://www.javatpoint.com/servlet-tutorial
+	TutorialsPoint	https://www.tutorialspoint.com/servlets/
+	BeginnersBook	https://beginnersbook.com/2013/05/servlet-tutorial/
+	StudyTonight	https://www.studytonight.com/servlet/
+	GeeksforGeeks	https://www.geeksforgeeks.org/introduction-java-servlets/
+	
+Spring – 
+
+	JavaTPoint		https://www.javatpoint.com/spring-tutorial
+	TutorialsPoint	https://www.tutorialspoint.com/spring/
+	Spring Official	https://spring.io/guides
+	Baeldung		https://www.baeldung.com/spring-tutorial	
+	Java4s		https://www.java4s.com/spring/
+
+TestNG –
+	TestNG Official	https://testng.org/
+	TutorialsPoint	https://www.tutorialspoint.com/testng/
+	Mkyong		http://www.mkyong.com/tutorials/testng-tutorials/
+	 
+UPSC – 
+
+	
 	
